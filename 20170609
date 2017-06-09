@@ -1,0 +1,30 @@
+I have to start the work of macro from this week or later.
+
+1.What can macro do？
+
+excelWorkbook operation crud
+excelWorksheet opetation crud 
+excelrow operation crud
+excelcolumn operation crud
+excel controller （image using your mouse key while operating excel）
+all fomulas you need in your daily work
+for and if simple logic
+
+2.And what is the macro code modle？
+
+parameters：Dim xxx As Ssss
+functions：
+Main Start：main function
+           End Main
+           
+           sub function
+           Sub xxxStart
+           End Sub
+           
+logic：    For xxxx Do
+           If  xxx  Do
+           
+So from next week I have to make some csv files of dc and icelog downloaded from server as the input，then make these data analysis in my macro.
+
+have a good morning，shin-san.
+           
