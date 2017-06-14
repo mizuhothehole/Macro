@@ -1,0 +1,22 @@
+Using macro to make graphs
+1.the relation ship of objects：worksheets-worksheet-chartobjects-chartobject-chart
+2.the structure of the chart
+chartobject
+    chart
+         title
+         series
+               name
+               value
+               xValues
+               datalabel
+         catagoryAxis
+         valueAxis
+         catagoryMainMinorGrid
+         catagorySubMinorGrid
+         valueMainGrid
+         valueSubGrid
+         catagoryLegend
+         valueLegend
+         title
+         
+         
