@@ -1,0 +1,26 @@
+Something very basic about VBA and VBE
+
+1.How to debug vba sources in VBE?
+  use F8 to step into sub or step by row.
+  use F9 to set current row as break point
+
+2.How to create variants?
+  use Dim As to create variants. The As defines the data type of the Dim.
+
+3.What is the structure of VBA project?
+  VBA Project->.bas module file(arcorhyme)
+                  ->procedure
+                    -> function(has return values, can have parameter)
+                        ->variants(static or not static)
+                    -> sub(do not have return values, can have parameter)
+                        ->variants(static or not static)
+                    -> field(Private or Public)
+               .cls class module file(data structure)
+                    ->class field(Private or Public)
+                    
+4.How to make chart in VBA
+   use chart object and set properties
+
+5.How to select and read file in VBA
+  use a select formwindow to let users select files, and then use selection to select the selected files.
+  use open method to read file contents
