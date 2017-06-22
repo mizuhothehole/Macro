@@ -1,0 +1,33 @@
+Erase, bound, Left(effect memory or not?), CStr
+
+Private Sub Workbook_Open()
+Dim Mystr As String
+Dim Mystr2 As String
+Mystr = "abcdef"
+MsgBox Mystr
+Mystr2 = Right(Mystr, 3)
+MsgBox Mystr
+Dim myArr(5) As String
+Dim myArr2(5) As String
+myArr(0) = "aa"
+myArr2(3) = "bb"
+MsgBox UBound(myArr)
+MsgBox UBound(myArr2)
+MsgBox myArr(0)
+MsgBox myArr2(3)
+Dim str111 As String
+Dim str222 As String
+str111 = CStr(myArr(0))
+str222 = CStr(myArr2(2))
+MsgBox str111
+MsgBox str222
+Erase myArr
+Erase myArr2
+MsgBox UBound(myArr)
+MsgBox UBound(myArr2)
+
+MsgBox myArr(0)
+MsgBox myArr2(0)
+End Sub
+
+
