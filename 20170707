@@ -1,0 +1,9 @@
+Some functions I found to use
+
+1.Cstr（）：this will make our data in cell into string.
+2.Len（）：this will return the length of our string.
+3.replace（str，“string to be replaced”，“destination string”）
+4.cells.columns.autofit this will make the column width into auto adapting the width of the strings.
+5. collection、dictionany add xxx，xxx
+  this did not need the “（）” mark
+6.all keys in dictionary are unique
