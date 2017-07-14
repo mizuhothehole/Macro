@@ -33,3 +33,12 @@ For a=0 To DDD.counts-1
     key do something
     item do something
 Next
+
+3.Parse string in string
+
+Label1Position = InStr（stringSample，“label1”）
+Label2Position = InStr（stringSample，“label2”）
+ParsedStringSample = Mid（stringSample，Label1Position，Label2Position）
+
+----xxxxxx（label1）----xxxxxx（label2）----
+So the result is going to be “xxxxxx----xxxxxx”
