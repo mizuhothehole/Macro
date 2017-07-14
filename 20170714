@@ -1,0 +1,35 @@
+New point view of making macro files
+
+So in today、s review，it seems hard for me to do the pair coding because i do not know a lot of the rules of our 
+transactions and what the man want me to do. So in my point of view， it is a good way for me to remenber some methods often
+used.
+
+The for each can only be used in the collections and arrays
+
+1.collection
+
+For Each xxx In LLL
+    xxx do something 
+Next xxx
+
+For aaa=1 To LLL.count
+    do something using LLL.Item（aaa）
+Next
+
+For aaa=0 To LLL.count - 1
+    do something using LLL（aaa）
+Next
+
+2.dictionary
+
+Dim a as countor
+keys = DDD.keys
+items = DDD.items
+
+For a=0 To DDD.counts-1
+    key=keys（a）
+    item=items（a）
+    'now we can do something using these keys and values 
+    key do something
+    item do something
+Next
