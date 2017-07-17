@@ -1,0 +1,25 @@
+Macro learning memo
+1.Date and Dateserial
+
+Dim date1 As Date = New Date（2017，9，11，12，33，45，121）
+This will return a datatype of date， also this could be
+the prototype of date in VB.
+
+2.Date date2 As Date
+
+date2=Dateserial（2017，7，17）
+this will also return a date that give us a date type. Which 
+makes easier to be made.
+
+Both 1 and 2 give us a date return value.
+
+DateAndType module in vba runtime.dll
+
+-------------------------------------
+
+The next thing we need to know is the “lastrow” logic
+
+1.Rows.Count will give us the biggest number of the current worksheet even through 
+there is no data written in it.
+
+2.Range.End（xlup）will give the endest cell.
