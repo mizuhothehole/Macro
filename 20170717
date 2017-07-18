@@ -23,3 +23,6 @@ The next thing we need to know is the “lastrow” logic
 there is no data written in it.
 
 2.Range.End（xlup）will give the endest cell.
+
+3.End means the lastest row number of the empty rows of some excel area. It is used like 
+this： Range.End（xlup）.Row
