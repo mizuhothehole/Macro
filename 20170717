@@ -26,3 +26,42 @@ there is no data written in it.
 
 3.End means the lastest row number of the empty rows of some excel area. It is used like 
 this： Range.End（xlup）.Row
+
+------------------------------------------------
+Some other methods we need to know.
+
+1.InStringRev：same as InStr，but count the position from the end，not the start.
+2.Array.LBound ： return the low label of the array
+  Array.UBound ： return the up label of the array
+  
+  So， what is the LBound and the UBound？
+  They are from these defines：
+  
+  Dim aa As Variant
+  ReDim aa（22 To 100）
+  
+  Here the low label is 22 and the up label is 100。
+  
+-------------/////////-------------------
+
+The other thing is CreateObject（“Scripting.Dictionary”）
+
+Using this will let us get a dictionary object which have the only key.
+
+------------------------------------------
+
+The standard For in VBA
+
+For AAAAA =34 To 1479 Step 4
+xxxxx
+Exit For
+xxxxx
+Next AAAAA（you can also do not write this）
+
+For Each BBBBB In VVVVV
+
+Exit For
+
+Next BBBBB（you can also do not write this as it is optional）
+--------------------------/---------
+Using the ：= means appointing the parameter of a method
