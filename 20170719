@@ -1,0 +1,37 @@
+How to create new workbook including appointed worksheets using vba
+
+1.new properties：
+
+application.activeworkbook.name
+application.activeworkbook.path
+
+using these we could get the current book name and path.
+
+worksheets（array（“sheet1”，“sheet2”））.copy
+application.activeworkbook.save filenane：=xxxx bookformat：= bbbb （save as new）
+                          .saveas                                  （save as copy）
+
+---------------
+
+date ：returns the date （yyyy-mm-dd）
+time：returns the time （hh-mm-ss）
+now： returns date and time
+
+---------------
+
+exit statement：
+
+exit sub （will not use the left sentences in sub）
+exit function （will not use the left sentences in function）
+exit for （this will exit the loop）
+
+---------------
+
+Class module field：
+
+Public xxx As String
+Public bbb As Boolean
+
+Module static fiekd：
+
+Public nnn As String
