@@ -1,0 +1,35 @@
+Test Using String In Macro
+
+Sub TestString()
+Dim StringForLen
+Dim StringForSpace
+Dim SringForString
+Dim StringForNotEqual
+Dim StringForStr
+Dim StringForCStr
+Dim StringForLike
+
+StringForLen = Len("123456789")
+SrringForSpace = "1" & Space(5) & "2"
+StringForString = String(5, "-")
+If ("1" <> "2") Then
+    StringForNotEqual = "Yes"
+End If
+
+If ("123" Like ("1*")) Then
+    StringForLike = "Yes"
+End If
+
+StringForStr = Str(-3) 'THIS IS WITH THE MARK SHOWING BIGGER THAN 1 OR 2
+StringForCStr = CStr(1 + 2) 'IT IS BETTER TO USE THIS BECAUSE THIS IS NOT CONTAINING THE MARK
+
+Debug.Print StringForLen
+Debug.Print SrringForSpace
+Debug.Print StringForString
+Debug.Print StringForNotEqual
+Debug.Print StringForLike
+Debug.Print StringForStr
+Debug.Print Len(StringForStr) 'show 2
+Debug.Print StringForCStr
+Debug.Print Len(StringForCStr) 'show 1
+End Sub
