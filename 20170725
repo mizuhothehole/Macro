@@ -37,3 +37,23 @@ Sub OriginalSub()
     Debug.Print "value" & CBool(0) ' original lib
     Debug.Print "String" & CBool("0") ' original lib
 End Sub
+
+3.Three different kinds value of variant: empty, null and error
+
+empty: the variant is announced but not defined with value
+null:  the variant is having no value
+error: the variant is having the error type of value
+
+Sub varVal()
+    Dim varVal
+    varVal = "22"
+    Debug.Print varVal
+    varVal = 22
+    Debug.Print varVal
+    varVal = Empty
+    Debug.Print varVal
+    varVal = Null
+    Debug.Print varVal
+    varVal = Error(1)
+    Debug.Print varVal
+End Sub
