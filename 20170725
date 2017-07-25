@@ -1,0 +1,39 @@
+
+Some transfer methods in VBA
+
+1. these methods will consider the parameter type
+
+' these methods in this sub consider the type of parameter
+Sub RefSub()
+    Debug.Print Chr(1)
+    Debug.Print Asc("A")
+    On Error Resume Next ' this will let the sub go on running until the end of the sub
+    ' on error resume next works between the on error resume next and the end of the sub
+    Debug.Print Asc(A) ' this will be a error
+    Debug.Print Str(2.22)
+    Debug.Print Val("222")
+    Debug.Print Int(5.6) ' this will return the value that is smaller than this
+    Debug.Print Fix(3.333) ' this will just remove the part after decimal
+    Debug.Print Round(8.44, 1)
+End Sub
+
+2. these methods will not consider the parameter type
+
+' these methods in this sub only read the string
+Sub OriginalSub()
+    Debug.Print CInt(5.6) ' original lib
+    Debug.Print CInt("5.6") ' original lib
+    Debug.Print CInt("5.6") ' original lib
+    Debug.Print CBool(22) ' original lib
+    Debug.Print CByte(22) ' this will return a byte which is between 0-255 ' original lib
+    Debug.Print CDate(#2/4/2017#) ' original lib
+    Debug.Print CCur(22.22) ' original lib
+    Debug.Print CStr(555) ' original lib
+    Debug.Print CVar("5") + "c" ' original lib
+    Debug.Print CSng("12.1231111111111") ' original lib
+    Debug.Print CSng(12.1231111111111) ' this will transfer the data to single
+    Debug.Print CDbl("12.1231111111111") ' original lib
+    Debug.Print CDbl(12.1231111111111) ' this will transfer the data to double
+    Debug.Print "value" & CBool(0) ' original lib
+    Debug.Print "String" & CBool("0") ' original lib
+End Sub
