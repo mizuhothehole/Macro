@@ -57,3 +57,113 @@ Sub varVal()
     varVal = Error(1)
     Debug.Print varVal
 End Sub
+
+4. VBA Errors
+
+Sub ShowErrorVal()
+    Dim varVal
+    For i = 0 To 200
+        varVal = Error(i)
+        Debug.Print varVal
+    Next
+End Sub
+
+Result:
+
+Application-defined or object-defined error
+Return without GoSub
+Application-defined or object-defined error
+Invalid procedure call or argument
+Overflow
+Out of memory
+Application-defined or object-defined error
+Subscript out of range
+This array is fixed or temporarily locked
+Division by zero
+Application-defined or object-defined error
+Type mismatch
+Out of string space
+Application-defined or object-defined error
+Expression too complex
+Can't perform requested operation
+User interrupt occurred
+Application-defined or object-defined error
+Resume without error
+Application-defined or object-defined error
+Application-defined or object-defined error
+Application-defined or object-defined error
+Application-defined or object-defined error
+Application-defined or object-defined error
+Application-defined or object-defined error
+Application-defined or object-defined error
+Out of stack space
+Application-defined or object-defined error
+Application-defined or object-defined error
+Application-defined or object-defined error
+Application-defined or object-defined error
+Application-defined or object-defined error
+Application-defined or object-defined error
+Sub or Function not defined
+Application-defined or object-defined error
+Application-defined or object-defined error
+Application-defined or object-defined error
+Application-defined or object-defined error
+Application-defined or object-defined error
+Application-defined or object-defined error
+Application-defined or object-defined error
+Application-defined or object-defined error
+Application-defined or object-defined error
+Application-defined or object-defined error
+Application-defined or object-defined error
+Too many DLL application clients
+Error in loading DLL
+Bad DLL calling convention
+Application-defined or object-defined error
+Internal error
+Bad file name or number
+File not found
+Bad file mode
+File already open
+Application-defined or object-defined error
+Device I/O error
+File already exists
+Bad record length
+Application-defined or object-defined error
+Disk full
+Input past end of file
+Bad record number
+Application-defined or object-defined error
+Application-defined or object-defined error
+Application-defined or object-defined error
+Too many files
+Device unavailable
+Application-defined or object-defined error
+Permission denied
+Disk not ready
+Application-defined or object-defined error
+Application-defined or object-defined error
+Can't rename with different drive
+Path/File access error
+Path not found
+Application-defined or object-defined error
+Application-defined or object-defined error
+Application-defined or object-defined error
+Application-defined or object-defined error
+Application-defined or object-defined error
+Application-defined or object-defined error
+Application-defined or object-defined error
+Application-defined or object-defined error
+Application-defined or object-defined error
+Application-defined or object-defined error
+Application-defined or object-defined error
+Application-defined or object-defined error
+Application-defined or object-defined error
+Application-defined or object-defined error
+Object variable or With block variable not set
+For loop not initialized
+Invalid pattern string
+Invalid use of Null
+Application-defined or object-defined error
+Unable to sink events of object because the object is already firing events to the maximum number of event receivers that it supports
+Can not call friend function on object which is not an instance of defining class
+A property or method call cannot include a reference to a private object, either as an argument or as a return value
