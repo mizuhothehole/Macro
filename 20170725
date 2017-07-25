@@ -167,3 +167,17 @@ Application-defined or object-defined error
 Unable to sink events of object because the object is already firing events to the maximum number of event receivers that it supports
 Can not call friend function on object which is not an instance of defining class
 A property or method call cannot include a reference to a private object, either as an argument or as a return value
+
+5.the difference between the "+" mark and the "&" mark
+
+Sub DiffetentBetweenPlusAndAnd()
+Dim a
+Dim b
+a = "1"
+b = 2
+c = "2"
+Debug.Print a + b ' this returns 3
+Debug.Print a & b ' this returns 12
+Debug.Print a + c ' this returns 12
+Debug.Print a & c ' this returns 12
+End Sub
